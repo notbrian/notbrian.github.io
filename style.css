@@ -1,6 +1,6 @@
 #container {
     font-family: 'Open Sans', sans-serif;
-    max-width: 60em;
+    max-width: 60rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -17,31 +17,31 @@
 
 #header h1 {
     font-weight: 400;
-    font-size: 3em;
-    margin-top: 0.250em;
-    margin-bottom: 0.1em;
+    font-size: 3rem;
+    margin-top: 0.250rem;
+    margin-bottom: 0.1rem;
 }
 
 #header h3 {
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #717171;
     margin: 0;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 /* Rename bod div to something else bruh */
 body #body {
-    max-width: 34em;
+    max-width: 34rem;
     margin: auto;
 }
 
 body #body p {
     margin: 0;
     font-weight: 300;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: #414141;
-    line-height: 1.70em;
+    line-height: 1.70rem;
 
 }
 
@@ -79,3 +79,15 @@ body #body p {
     right: auto;
     width: 100%;
 }
+
+/* Media query bois  */
+
+@media screen and (max-width: 582px) {
+    #header h1 {
+        font-size: 8vw;
+    }
+
+    #header h3 {
+        font-size: 4.5vw;
+    }
+  }
