@@ -87,11 +87,15 @@ body #body p {
     #body { 
         width: 85vw;
     }
+
+    #header {
+        max-width: 85vw;
+    }
     #header h1 {
-        font-size: 8vw;
+        font-size: 7.5vw;
     }
 
     #header h3 {
-        font-size: 4.5vw;
+        font-size: 4.25vw;
     }
   }
