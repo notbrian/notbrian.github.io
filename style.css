@@ -9,6 +9,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .bold {
@@ -18,6 +19,8 @@
 
 #header {
     margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #header h1 {
@@ -34,10 +37,15 @@
     margin-bottom: 1.15rem;
 }
 
+body {
+    margin:0;
+}
 /* Rename bod div to something else bruh */
 body #body {
     max-width: 34rem;
     margin: auto;
+    margin-top: 0;
+    margin-bottom:0;
 }
 
 body #body p {
