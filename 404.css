@@ -42,4 +42,8 @@ img {
     #header {
         max-width: 90vw;
     }
+    
+     #container {
+        justify-content: center;
+    }
   }
