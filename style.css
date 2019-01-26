@@ -45,9 +45,9 @@ body {
 /* Rename bod div to something else bruh */
 body #body {
     max-width: 34rem;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
-    margin-bottom: 0;
 }
 
 body #body p {
