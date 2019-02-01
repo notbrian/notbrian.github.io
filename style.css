@@ -100,7 +100,7 @@ body #body p {
 @media screen and (max-width: 582px) {
     #body { 
         width: 85vw;
-        margin-bottom: 2em;
+        margin-bottom: 3em;
     }
 
     #header {
