@@ -1,0 +1,11 @@
+#header {
+    margin-left: 0;
+}
+
+#sort-icons {
+    font-family: 'Open Sans', sans-serif;
+    height: 50px;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
