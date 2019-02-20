@@ -28,6 +28,7 @@
     font-weight: 400;
     font-size: 3rem;
     margin-bottom: 0.1rem;
+    margin-top: 0;
 }
 
 #header h3 {
@@ -44,9 +45,9 @@ body {
 /* Rename bod div to something else bruh */
 body #body {
     max-width: 34rem;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
-    margin-bottom:0;
 }
 
 body #body p {
@@ -63,7 +64,7 @@ body #body p {
  */
 
 .purple-link {
-    color: #9771E0;
+    color: #885CDB;
     font-weight: 600;
     text-decoration: none;
     display: inline;
@@ -78,7 +79,7 @@ body #body p {
     right: 0;
     width: 0;
     bottom: -2px;
-    background:  #9771E0;
+    background:  #885CDB;
     height: 3px;
     transition-property: width;
     transition-duration: 0.2s;
@@ -99,6 +100,7 @@ body #body p {
 @media screen and (max-width: 582px) {
     #body { 
         width: 85vw;
+        padding-bottom: 3em;
     }
 
     #header {
@@ -106,9 +108,14 @@ body #body p {
     }
     #header h1 {
         font-size: 7.5vw;
+        margin-top: 1em;
     }
 
     #header h3 {
         font-size: 4.25vw;
+    }
+
+    #container {
+        justify-content: flex-start;
     }
   }
