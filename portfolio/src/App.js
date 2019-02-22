@@ -7,21 +7,46 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
+      <div>
+        <div id="header">
+          <h1>This is my portfolio.</h1>
+          <h3>Fancy subheader text here.</h3>
+        </div>
+        <div id="sort-icons">
+          <a href="#">
+            {' '}
+            <img class="icon" src="/favicon.png" alt="" /> Hackathons{' '}
           </a>
-        </header>
+          <a href="#">
+            {' '}
+            <img class="icon" src="/favicon.png" alt="" /> Digital Futures{' '}
+          </a>
+          <a href="#">
+            {' '}
+            <img class="icon" src="/favicon.png" alt="" /> AI/ML{' '}
+          </a>
+          <a href="#">
+            {' '}
+            <img class="icon" src="/favicon.png" alt="" /> Touch Designer{' '}
+          </a>
+          <a href="#">
+            {' '}
+            <img class="icon" src="/favicon.png" alt="" /> Installation{' '}
+          </a>
+          <a href="#">
+            {' '}
+            <img class="icon" src="/favicon.png" alt="" /> Interactive{' '}
+          </a>
+          <a href="#">
+            {' '}
+            <img class="icon" src="/favicon.png" alt="" /> Side Projects{' '}
+          </a>
+        </div>
+        <div id="container">
+          <div id="body">
+            <p>Grid CMS here.</p>
+          </div>
+        </div>
       </div>
     );
   }

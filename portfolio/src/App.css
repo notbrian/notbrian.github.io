@@ -1,33 +1,148 @@
-.App {
+.nowrap {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+#container {
+  max-width: 100vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  border: 1px dashed black;
+}
+
+.bold {
+  display: inline;
+  font-weight: 900;
+}
+
+#header {
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#header h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 0.1rem;
+  margin-top: 0;
+}
+
+#header h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #717171;
+  margin: 0;
+  margin-bottom: 1.15rem;
+}
+
+body {
+  margin:0;
+  font-family: 'Open Sans', sans-serif;
+}
+/* Rename bod div to something else bruh */
+body #body {
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+body #body p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: #414141;
+  line-height: 1.70rem;
+
+}
+
+/* Thank Vlad from Stack Overflow for his underline animation
+  https://stackoverflow.com/a/40242626
+*/
+
+.purple-link {
+  color: #885CDB;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+
+.purple-link:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -2px;
+  background:  #885CDB;
+  height: 3px;
+  transition-property: width;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.purple-link:hover:after,
+.purple-link:focus:after,
+.purple-link:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+
+/* Media query bois  */
+
+@media screen and (max-width: 582px) {
+  #body { 
+      width: 85vw;
+      padding-bottom: 3em;
+  }
+
+  #header {
+      max-width: 85vw;
+  }
+  #header h1 {
+      font-size: 7.5vw;
+      margin-top: 1em;
+  }
+
+  #header h3 {
+      font-size: 4.25vw;
+  }
+
+  #container {
+      justify-content: flex-start;
+  }
+}
+
+
+
+
+#header {
+  margin-left: 0;
+}
+
+#sort-icons {
+  height: 50px;
+  border: 1px solid black;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+#sort-icons a {
+  text-decoration: none;
+  border: 1px solid black;
+  margin: 0px 5px 0px 5px
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+  width: 25px;
+  height: 25px;
 }
