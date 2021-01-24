@@ -123,5 +123,6 @@ body #body p {
 
   #container {
     justify-content: flex-start;
+    width: 100%;
   }
 }
