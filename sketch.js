@@ -40,6 +40,10 @@ function mousePressed(e) {
   }
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 class Person {
   constructor(x, y) {
     this.acceleration = createVector(0, 0);
