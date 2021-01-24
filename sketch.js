@@ -3,6 +3,7 @@ const agents = [];
 let minrange = 0;
 let maxrange = 0;
 
+let backgroundOpacity = 0;
 let canvas;
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
@@ -26,7 +27,7 @@ function setup() {
 }
 
 function draw() {
-  background(255, 255, 255, 3);
+  background(255, 255, 255, backgroundOpacity);
   for (let i = 0; i < agents.length; i++) {
     agents[i].update();
     agents[i].borders();
@@ -37,6 +38,13 @@ function draw() {
 function mousePressed(e) {
   if (mouseButton === "left") {
     background(255);
+  }
+  if (mouseButton === "right") {
+    if (backgroundOpacity === 0) {
+      backgroundOpacity = 255;
+    } else {
+      backgroundOpacity = 0;
+    }
   }
 }
 
@@ -111,3 +119,7 @@ class Person {
     if (this.position.y > height + this.r) this.position.y = -this.r;
   }
 }
+
+document.oncontextmenu = function () {
+  return false;
+};
