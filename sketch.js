@@ -6,7 +6,7 @@ let maxrange = 0;
 let canvas;
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
-  canvas.position(0, 0);
+  canvas.position(0, 0, "fixed");
   canvas.style("z-index", -1);
   for (let i = 0; i < 20; i++) {
     agents.push(new Person(width / 2, height / 2));
