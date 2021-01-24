@@ -14,71 +14,87 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
   </head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156912954-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-156912954-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'UA-156912954-1');
-</script>
-
+    gtag("config", "UA-156912954-1");
+  </script>
 
   <body>
     <div id="container">
-      <div id="header">
-        <h1>
-          <p class="bold">Hey!</p>
-          I'm Brian Nguyen.
-        </h1>
-        <h3>
-          Creative developer and builder of
-          <span class="nowrap">cool shit.</span>
-        </h3>
+      <div id="innerDiv">
+        <div id="header">
+          <h1>
+            <p class="bold">Hey!</p>
+            I'm Brian Nguyen.
+          </h1>
+          <h3>
+            Creative developer and builder of
+            <span class="nowrap">cool stuff.</span>
+          </h3>
+        </div>
+        <div id="body">
+          <p>
+            Currently, i'm doing my fourth year in the Digital Futures program
+            at OCAD University. I work to combine art and technology to create
+
+            <span class="nowrap">magic.</span><br /><br />
+
+            Previously, I interned at
+            <a class="purple-link" href="https://hxouse.com/"> HXOUSE</a> as a
+            Full Stack Developer where I created a new interactive website and
+            new curriculum. <br /><br />
+
+            In 2018, I was apart of
+            <a class="purple-link" href="https://www.jam3.com/"> Jam3</a> as a
+            WE3 developer intern where I ideated, pitched and built augmented
+            reality experiences to partners
+            <span class="nowrap">and clients.</span><br /><br />
+
+            Before that, I co-founded
+            <a
+              class="purple-link"
+              href="https://www.facebook.com/projectcipher/"
+            >
+              Project Cipher</a
+            >, a non-for-profit that organized high school hackathons, and
+            taught coding workshops in my community. <br /><br />
+
+            Currently I'm finishing my 4th year at OCAD, creating websites at
+            Emdash, and working on my thesis project involving machine learning
+            agents emulating organic beings.
+            <br /><br />
+
+            If any of this sounds interesting, be sure to check out my
+            <a
+              class="purple-link"
+              href="https://drive.google.com/file/d/1Z88jYPlO_FT_RuQdBwKbMd0pgeQFcZYI/view?usp=sharing"
+            >
+              resume</a
+            >, my
+            <a class="purple-link" href="http://portfolio.notbriann.com">
+              portfolio</a
+            >,
+            <a class="purple-link" href="https://github.com/notbrian"> Github</a
+            >, and
+            <span class="nowrap"
+              ><a class="purple-link" href="mailto:hello@notbriann.com">
+                say hello. 👋</a
+              ></span
+            >
+          </p>
+        </div>
       </div>
-      <div id="body">
-        <p>
-          Currently, i'm doing my fourth year in the Digital Futures program at
-          OCAD University. I work daily to combine art and technology to create
-          compelling
-          <span class="nowrap">digital experiences.</span><br /><br />
-
-          Previously, I interned at
-          <a class="purple-link" href="https://hxouse.com/"> HXOUSE</a> as a
-          Full Stack Developer where I created a new interactive website and
-          new curriculum. <br /><br />
-
-          In 2018, I was apart of
-          <a class="purple-link" href="https://www.jam3.com/"> Jam3</a> as a WE3
-          developer intern where I ideated, pitched and built augmented reality
-          experiences to partners <span class="nowrap">and clients.</span
-          ><br /><br />
-
-          Before that, I co-founded
-          <a class="purple-link" href="https://www.facebook.com/projectcipher/">
-            Project Cipher</a
-          >, a non-for-profit that organized high school hackathons, and taught
-          coding workshops in our community. <br /><br />
-
-          If any of this sounds interesting, be sure to check out my
-          <a
-            class="purple-link"
-            href="https://drive.google.com/file/d/1RgtM_Y2dkPMULkkoCGndb84Tler3jZTl/view?usp=sharing"
-          >
-            resume</a
-          >, my
-          <a class="purple-link" href="http://portfolio.notbriann.com">
-            portfolio</a
-          >,
-          <a class="purple-link" href="https://github.com/notbrian"> Github</a>,
-          or just
-          <span class="nowrap"
-            ><a class="purple-link" href="mailto:hello@notbriann.com">
-              say hello. 👋</a
-            ></span
-          >
-        </p>
-      </div>
+      <script src="p5.min.js"></script>
+      <script src="sketch.js"></script>
     </div>
   </body>
 </html>
