@@ -36,9 +36,9 @@ function draw() {
 }
 
 function mousePressed(e) {
-  if (mouseButton === "left") {
-    background(255);
-  }
+  // if (mouseButton === "left") {
+  //   background(255);
+  // }
   if (mouseButton === "right") {
     if (backgroundOpacity === 0) {
       backgroundOpacity = 255;

@@ -101,6 +101,21 @@ body #body p {
   width: 100%;
 }
 
+#awardsTitle {
+  margin-bottom: 0;
+}
+
+/* coding gods forgive me for using !important but this website is janked  */
+
+.mini {
+  margin-top: 1px !important;
+  font-size: 10px !important;
+}
+
+.award {
+  margin-top: 8px !important;
+}
+
 /* Media query bois  */
 
 @media screen and (max-width: 582px) {
